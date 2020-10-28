@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+    <meta charset="UTF-8" />
+    <title>리스트와 버튼</title>
+    <!-- style태그 or css 파일 링크 -->
+    <style>
+    .myList{
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    .myList li{
+      padding: 5px;
+      margin-bottom: 5px;
+      border-bottom: 1px solid #efefef;
+       }
+    /*마지막 li의 아래선을 없앰*/
+     .myList li:last-child {
+      border-bottom: 0;
+      color:tomato;
+    }
+    .myList li:first-child {
+      color: skyblue;
+    }
+    .myList li:nth-child(2){ /*li와 : 사이 공백있으면 실행안됨*/
+      color: slateblue;
+    }
+    .button{
+      padding: 15ps 30px;
+      text-align: center;
+      border-radius: 5px;
+      color: white;
+    }
+    .button1 {
+      background-color: red;
+      border: 1px solid red;
+    }
+    .button2 {
+      background-color: blue;
+      border: 1px solid blue;
+    }
+    .button3 {
+      background-color: green;
+      border: 1px solid green;
+    }
+    </style>
+      <body>
+        <h3> 리스트</h3>
+        <ul class="myList">
+          <li>순서없는 목록의 아이템1</li>
+          <li>순서없는 목록의 아이템1</li>
+          <li>순서없는 목록의 아이템1</li>
+        </ul>
+        <ol class="myList">
+         <li>순서있는 목록의 아이템1</li>
+         <li>순서있는 목록의 아이템1</li>리스트와 버튼
+         <li>순서있는 목록의 아이템1</li>
+       </ol>
+    
+       <h3>버튼</h3>
+        <button class="button button1" >red</button>
+        <button class="button button2" >blue</button>
+        <button class="button button3" >green</button>
+      
+        
+      </body>
+  </head>
+
+ 
+</html>

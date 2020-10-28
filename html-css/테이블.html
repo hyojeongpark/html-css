@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블</title>
+    <style>
+        table,
+        td,
+        th{
+            border: 1px solid none;
+        }
+        table{
+            border-collapse: collapse;
+            width:700px;
+            text-align: left;
+        
+        }
+       
+        th,td{
+            padding:10px;
+            border-bottom: 1px solid lightgray;
+        }
+     
+        th{
+            height:2rem;
+            text-align: left;
+        }
+        td{
+            height:50px;
+            vertical-align: bottom;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover{
+            background-color: darkolivegreen;
+        }
+        tr:nth-child(1){
+            color:white;
+            background-color: skyblue;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>날짜</th>
+            <th>조회수</th>
+        </tr>
+        <tr>
+            <th>99</th>
+            <th>누가 CSS공부한다면서요?</th>
+            <th>홍길동</th>
+            <th>2019.07.02</th>
+            <th>1</th>
+        </tr>
+        <tr>
+            <th>100</th>
+            <th>꺼진불도 다시보자.gif</th>
+            <th>홍길동</th>
+            <th>2019.07.02</th>
+            <th>1</th>
+        </tr>
+        <tr>
+            <th>101</th>
+            <th>아 배고픈데...</th>
+            <th>홍길동</th>
+            <th>2019.07.02</th>
+            <th>1</th>
+        </tr>
+            
+    </table>
+</body>
+</html>

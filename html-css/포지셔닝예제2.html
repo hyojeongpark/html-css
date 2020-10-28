@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    #main{
+        position: relative;
+        height: 200px;
+        width: 200px;
+        border: 1px solid black;
+    }
+    #center{
+        position:relative;
+        left:50px;
+        top:50px;
+        border:1px solid black;
+        width:100px;
+        height:100px;
+    }
+    .box{
+        height:50px;
+        width:50px;
+    }
+    .lightblue
+    {background-color: lightblue;
+    position:absolute;
+    top:0;
+    left:0;
+    }
+    .lightgreen{
+        background-color: lightgreen;
+    position:absolute;
+    top:0;
+    right:0;
+    }
+    .yellow{
+    background-color: yellow;
+    position:absolute;
+    bottom:0;
+    right:0;
+    z-index: 10;    
+    }
+    .lightpink{
+    background-color: lightpink;
+    position:absolute;
+    bottom:0;
+    left:15px;
+    /*z-index우선순위*/
+    z-index: 5;
+    opacity: 0.3;
+    }
+    </style>
+</head>
+<body>
+    <div id="main"> <!--div class아님-->
+        <div class="box lightblue "></div>
+        <div class="box lightgreen "></div>
+        <div class="box yellow "></div>
+        <div class="box lightpink "></div>
+        
+        <div id="center">
+            <div class="box lightblue "></div>
+            <div class="box lightgreen "></div>
+            <div class="box yellow "></div>
+            <div class="box lightpink "></div>
+        </div>
+    </div>
+</body>
+</html>

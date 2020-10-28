@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>포지셔닝</title>
+    <style>
+        .container{
+            position:relative;/*없으면 body기준 있으면 contatiner기준*/
+            width: 600px;
+            margin: 0 auto;
+            height: 300px;
+            border:2px solid gray;
+    
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            overflow: hidden;
+        }
+        .red{
+            background-color: tomato;
+        }
+        .green{
+            background-color: yellowgreen;
+        }
+        .blue{
+            background-color: skyblue;
+        }
+
+        
+        .float-left{
+            float:left;
+        }
+        .float-right{
+            float:right;
+        }
+        .clear{
+            clear: both;
+        }
+        /*fixed relative absolute*/
+        .relative { /*원래위치에서이동*/
+            position: relative;
+            top:15px;
+            left:15px;
+        }
+        .absolute{/*기준점(포지션이 기본x)안에서 이동*/
+            position: absolute;
+            top:20px;
+            left: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box red float-right"></div> <!--.box.red 단축키*/-->
+        <div class="box green float-left"></div>
+        <div class="box blue float-left"></div>
+    </div>
+    <div class="container">
+        <div class="box red relative"></div> <!--.box.red 단축키*/-->
+        <div class="box green absolute"></div>
+        <div class="box blue"></div>
+    </div>
+    <div id="con"></div>
+</body>
+</html>
